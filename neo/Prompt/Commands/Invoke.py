@@ -422,6 +422,8 @@ def test_deploy_and_invoke(deploy_script, invoke_args, wallet,
         invoke_args, neo_to_attach, gas_to_attach = get_asset_attachments(invoke_args)
         invoke_args.reverse()
 
+        print("args:"+invoke_args)
+
         sb = ScriptBuilder()
 
         for p in invoke_args:
